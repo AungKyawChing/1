@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="email" id="email" placeholder="Email (Optional)">
+            <select id="gender">
+                <option value="">Select Gender (Optional)</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="date" id="dob" placeholder="Date of Birth (Optional)">
+            <input type="file" id="profileImage" accept="image/*">
+            <textarea id="bio" placeholder="Bio (Optional)"></textarea>
+            <select id="relationshipStatus">
+                <option value="">Relationship Status (Optional)</option>
+                <option value="single">Single</option>
+                <option value="in-relationship">In a Relationship</option>
+                <option value="married">Married</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
